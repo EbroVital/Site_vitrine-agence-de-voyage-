@@ -228,8 +228,110 @@ footer h1{
     color: #777;
 }
 
+/* ===== TABLETTE (max-width: 768px) ===== */
+@media (max-width: 768px) {
+    .wrapper{
+        width: 100%;
+        max-width: 940px;
+    }
 
+    header{
+        height: auto;
+        padding: 20px 0;
+    }
+    header h1{
+        float: none;
+        text-align: center;
+        margin-top: 0;
+    }
+    header nav{
+        float: none;
+        margin-top: 15px;
+        text-align: center;
+    }
+    header nav ul li{
+        display: inline-block;
+        margin: 5px;
+    }
 
+    #main-image{
+        height: 400px;
+    }
+    #main-image h2{
+        font-size: 34px;
+        padding: 100px 20px 40px 20px;
+    }
 
+    #steps ul li{
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        padding-top: 100px;
+    }
+
+    #possibilities article{
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    #possibilities article:first-child{
+        margin-right: 0;
+    }
+
+    #contact h3{
+        width: 90%;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    label{
+        margin-bottom: 8px;
+    }
+    input[type="text"]{
+        width: 80%;
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+}
+
+/* ===== MOBILE (max-width: 480px) ===== */
+@media (max-width: 480px) {
+    h1{ font-size: 32px; }
+    h2{ font-size: 26px; }
+    h3{ font-size: 22px; }
+    h4{ font-size: 20px; }
+
+    #main-image{
+        height: 320px;
+    }
+    #main-image h2{
+        font-size: 24px;
+        padding: 80px 15px 30px 15px;
+    }
+
+    .overlay{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #possibilities article{
+        background-size: cover;
+        background-position: center;
+    }
+
+    footer{
+        height: auto;
+        padding: 40px 0;
+    }
+    footer h1{
+        padding-top: 0;
+    }
+
+    input[type="text"]{
+        width: 90%;
+    }
+}
 
 
